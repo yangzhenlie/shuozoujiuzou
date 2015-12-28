@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>说走就走</title>
+   	<script src="js/jquery.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/app.css" rel="stylesheet"/>
+    <style type="text/css">
+    	html,body,#offCanvasContentScroll{
+    		height: 100%;
+    	}
+    	#offCanvasContentScroll{
+    		background: #F0F0F0;
+    	}
+    	.top-wrap{
+    		position: static;
+    		background: #FF;
+    		color: #32BD60 !important;
+    		border-bottom: 1px solid #F0F0F0;
+    	}
+    </style>
+</head>
+<body>
+	<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+		<!--侧滑菜单部分-->
+		<aside id="offCanvasSide" class="mui-off-canvas-left">
+			<div id="offCanvasSideScroll" class="mui-scroll-wrapper" style="color: #FFF;">
+				<div class="mui-scroll">
+					<div class="menu-left-login">
+						<a>注册</a>
+						<a>登录</a>
+					</div>
+					<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								首页
+								<span class="left-desc">Home</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								 特价啦
+								<span class="left-desc">Spacial offer</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								 省内游
+								<span class="left-desc">The province</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								 国内游
+								<span class="left-desc">Domestic</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								  国际游
+								<span class="left-desc">International</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								 机票
+								<span class="left-desc">Flight ticket</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								  酒店
+								<span class="left-desc">Hotel</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								  签证
+								<span class="left-desc">Passport</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</aside>
+		
+		<div class="mui-inner-wrap" style="background: #FFF; overflow: hidden;">
+			<!--顶部-->
+			<div class="top-wrap clearfix">
+				<a class="city fn-left" id="city">
+					<span class="mui-icon mui-icon-location"></span>广州
+				</a>
+				<div class="search fn-left">
+					<input type="text" placeholder="柬埔寨" />
+				</div>
+				<span class="tel fn-left" id="tel">
+					<span class="mui-icon mui-icon-phone"></span>
+				</span>
+			</div>
+			
+			<div id="offCanvasContentScroll">
+			<div>
+			<!--图片轮播开始-->
+			<div id="slider" class="mui-slider" >
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="javascript:;">
+							<img src="images/5.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="javascript:;">
+							<img src="images/4.jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="javascript:;">
+							<img src="images/2.jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="javascript:;">
+							<img src="images/3.jpg">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="javascript:;">
+							<img src="images/1.jpg">
+						</a>
+					</div>
+					<!-- 第五张 -->
+					<div class="mui-slider-item">
+						<a href="javascript:;">
+							<img src="images/5.jpg">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="javascript:;">
+							<img src="images/4.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+			<!--图片轮播结束-->
+			
+			<!--菜单开始-->
+			<div class="btn-nav">
+		        <ul class="clearfix">
+		        	<li>
+		                <a href="javascript:;">
+		                    <span class="btn-icon"></span>
+		                    <span class="word">跟团</span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="javascript:;">
+		                    <span class="btn-icon"></span>
+		                    <span class="word">自助</span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="javascript:;">
+		                    <span class="btn-icon"></span>
+		                    <span class="word">邮轮</span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="javascript:;">
+		                    <span class="btn-icon"></span>
+		                    <span class="word">自驾</span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="javascript:;">
+		                    <span class="btn-icon"></span>
+		                    <span class="word">景点门票</span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="javascript:;">
+		                    <span class="btn-icon"></span>
+		                    <span class="word">签证</span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="javascript:;">
+		                    <span class="btn-icon"></span>
+		                    <span class="word">酒店</span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="javascript:;">
+		                    <span class="btn-icon"></span>
+		                    <span class="word">机票</span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="javascript:;">
+		                    <span class="btn-icon"></span>
+		                    <span class="word">火车票</span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="javascript:;">
+		                    <span class="btn-icon"></span>
+		                    <span class="word">途牛金服</span>
+		                </a>
+		            </li>
+		        </ul>
+			</div>
+			<!--菜单结束-->
+			
+			<div class="active-list">
+				<ul class="clearfix">
+					<li>
+						<img src="images/activity1.jpg" />
+					</li>
+					<li>
+						<img src="images/activity2.jpg" />
+					</li>
+					<li>
+						<img src="images/activity3.jpg" />
+					</li>
+					<li>
+						<img src="images/activity4.jpg" />
+					</li>
+					<li>
+						<img src="images/activity5.jpg" />
+					</li>
+					<li>
+						<img src="images/activity6.jpg" />
+					</li>
+				</ul>
+			</div>
+			
+			<div class="sale">
+				<div class="item-title">手机特卖</div>
+				<ul class="clearfix">
+					<li>
+						<img src="images/a1.jpg" />
+						<h4>即时秒杀</h4>
+						<h5>长城</h5>
+						<h5 class="red">￥2922</h5>
+					</li>
+					<li>
+						<img src="images/a2.jpg" />
+						<h4>尾货物价</h4>
+						<h5>泰国</h5>
+						<h5 class="red">￥2129</h5>
+					</li>
+					<li>
+						<img src="images/a3.jpg" />
+						<h4>专场精选</h4>
+						<h5>说走就走</h5>
+						<h5 class="red">￥3472</h5>
+					</li>
+					<li>
+						<img src="images/a4.jpg" />
+						<h4>预售钜惠</h4>
+						<h5>早订早惠</h5>
+						<h5 class="red">￥2510</h5>
+					</li>
+					<li>
+						<img src="images/a5.jpg" />
+						<h4>超值爆款</h4>
+						<h5>黄河</h5>
+						<h5 class="red">￥2999</h5>
+					</li>
+					<li>
+						<img src="images/a6.jpg" />
+						<h4>老于推荐</h4>
+						<h5>苏州园林</h5>
+						<h5 class="red">￥1160</h5>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="groom">
+				<div class="item-title">产品经理推荐</div>
+				<ul>
+					<li>
+						<div>
+							<img src="images/a1.jpg" />
+						</div>
+						<div>
+							<span>&lt;北京双飞5日游&gt;爸妈游热销，圆梦之旅，1价全含，24小时接送站</span>
+						</div>
+						<div>
+							<p class="red">￥2595</p>
+							<p>100%满意</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/a2.jpg" />
+						</div>
+						<div>
+							<span>&lt;海南三亚6日游&gt;2人减400，恋恋双岛，Hold爱呀诺达</span>
+						</div>
+						<div>
+							<p class="red">￥1365</p>
+							<p>90%满意</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/a3.jpg" />
+						</div>
+						<div>
+							<span>&lt;桂林-大漓江-阳朔-古东双飞5日游&gt;途牛爆款立减1600，2晚挂四，骑行</span>
+						</div>
+						<div>
+							<p class="red">￥15426</p>
+							<p>97%满意</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/a4.jpg" />
+						</div>
+						<div>
+							<span>&lt;三亚双飞5日游&gt;帆船出海 全新体验 近海而居</span>
+						</div>
+						<div>
+							<p class="red">￥2499</p>
+							<p>100%满意</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/a5.jpg" />
+						</div>
+						<div>
+							<span>&lt;上海-杭州-乌镇-千岛湖-黄山双飞6日游&gt;立减400，住宿VIP升级，一晚</span>
+						</div>
+						<div>
+							<p class="red">￥3699</p>
+							<p>99%满意</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/a6.jpg" />
+						</div>
+						<div>
+							<span>&lt;长春伪皇宫-长白山-镜泊湖-扎龙-哈尔滨双飞7日游&gt;牛独家，赏</span>
+						</div>
+						<div>
+							<p class="red">￥2685</p>
+							<p>97%满意</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/a7.jpg" />
+						</div>
+						<div>
+							<span>&lt;厦门4日自由行&gt;双人立减400，自助销售冠军</span>
+						</div>
+						<div>
+							<p class="red">￥6985</p>
+							<p>90%满意</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/a8.jpg" />
+						</div>
+						<div>
+							<span>&lt;广州长隆酒店4日自助游&gt;全程住长隆酒店，各种套餐、房型任选</span>
+						</div>
+						<div>
+							<p class="red">￥8547</p>
+							<p>92%满意</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/a9.jpg" />
+						</div>
+						<div>
+							<span>&lt;桂林Club Med4日自助游&gt;满3晚送1晚，感受静谧时光，私享无忧假期</span>
+						</div>
+						<div>
+							<p class="red">￥3695</p>
+							<p>100%满意</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="yzl">
+				移动APP个人案例，联系QQ：772388856
+			</div>
+			
+			<div class="bottom-height"></div>
+			<div class="bottom-height"></div>
+			</div>
+			</div>
+			
+			<!--底部导航开始-->
+			<nav class="mui-bar mui-bar-tab">
+				<a id="index" class="mui-tab-item mui-active">
+					<span class="mui-icon mui-icon-home"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a id="list" class="mui-tab-item">
+					<span class="mui-icon mui-icon-navigate"></span>
+					<span class="mui-tab-label">目的地</span>
+				</a>
+				<a id="category" class="mui-tab-item">
+					<span class="mui-icon mui-icon-list"></span>
+					<span class="mui-tab-label">分类</span>
+				</a>
+				<a id="user" class="mui-tab-item">
+					<span class="mui-icon mui-icon-contact"></span>
+					<span class="mui-tab-label">我的</span>
+				</a>
+			</nav>
+			<!--底部导航结束-->
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+	
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+		
+		var gallery = mui('#slider');
+		gallery.slider({
+		  interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+		
+		var city = document.getElementById('city').addEventListener('tap', function() {
+//			mui.openWindow({
+//			    url: 'city.html', 
+//			    id: 'city',
+//			    show:{
+//			      autoShow:false
+//			    }
+//		  	});
+		  	window.location.href = "city.html";
+		});
+//		mui.init({
+//		  preloadPages:[
+//		    {
+//		      url:'city.html',
+//		      id:'city'
+//		    }
+//		  ]
+//		});
+		var list = document.getElementById('list').addEventListener('tap', function() {
+//			mui.openWindow({
+//			    url: 'list.html', 
+//			    id: 'list',
+//			    show:{
+//			      autoShow:false
+//			    }
+//		  	});
+		  	window.location.href = "list.html";
+		});
+//		mui.init({
+//		  preloadPages:[
+//		    {
+//		      url:'list.html',
+//		      id:'list'
+//		    }
+//		  ]
+//		});
+		var category = document.getElementById('category').addEventListener('tap', function() {
+//			mui.openWindow({
+//			    url: 'category.html', 
+//			    id: 'category',
+//			    show:{
+//			      autoShow:false
+//			    }
+//		  	});
+		  	window.location.href = "category.html";
+		});
+//		mui.init({
+//		  preloadPages:[
+//		    {
+//		      url:'category.html',
+//		      id:'category'
+//		    }
+//		  ]
+//		});
+		var user = document.getElementById('user').addEventListener('tap', function() {
+//			mui.openWindow({
+//			    url: 'user.html', 
+//			    id: 'user',
+//			    show:{
+//			      autoShow:false
+//			    }
+//		  	});
+		  	window.location.href = "user.html";
+		});
+//		mui.init({
+//		  preloadPages:[
+//		    {
+//		      url:'user.html',
+//		      id:'user'
+//		    }
+//		  ]
+//		});
+		
+//		$(window).scroll(function(){
+//			if($(document).scrollTop()>100){
+//				$(".top-wrap").css({"background-color":"rgba(240,240,240,1)","color":"rgb(50,189,96)"});
+//			}else{
+//				$(".top-wrap").css({"background-color":"rgba(240,240,240,"+ $(document).scrollTop()/100 +")","color":"rgb("+ parseInt(255-205/99*$(document).scrollTop()) +","+ parseInt(255-66/99*$(document).scrollTop()) +","+ parseInt(255-159/99*$(document).scrollTop()) +")"});
+//			}
+//		});
+		
+		//处理逻辑：1秒内，连续两次按返回键，则退出应用；
+		var showMenu = false;
+		var first = null;
+		mui.back = function() {
+			if (showMenu) {
+				closeMenu();
+			} else {
+				//首次按键，提示‘再按一次退出应用’
+				if (!first) {
+					first = new Date().getTime();
+					mui.toast('再按一次退出应用');
+					setTimeout(function() {
+						first = null;
+					}, 1000);
+				} else {
+					if (new Date().getTime() - first < 1000) {
+						plus.runtime.quit();
+					}
+				}
+			}
+		};
+		function closeMenu() {
+			mui('.mui-off-canvas-wrap').offCanvas('close');
+		};
+		
+		//侧滑容器父节点
+		var offCanvasWrapper = mui('#offCanvasWrapper');
+		 //主界面容器
+		var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+		 //菜单容器
+		var offCanvasSide = document.getElementById("offCanvasSide");
+		if (!mui.os.android) {
+			//document.getElementById("move-togger").classList.remove('mui-hidden');
+			var spans = document.querySelectorAll('.android-only');
+			for (var i = 0, len = spans.length; i < len; i++) {
+				spans[i].style.display = "none";
+			}
+		}
+		 //移动效果是否为整体移动
+		var moveTogether = false;
+		 //侧滑容器的class列表，增加.mui-slide-in即可实现菜单移动、主界面不动的效果；
+		var classList = offCanvasWrapper[0].classList;
+		 //变换侧滑动画移动效果；
+		//mui('.mui-input-group').on('change', 'input', function() {
+			if ('all-move') {
+				offCanvasSide.classList.remove('mui-transitioning');
+				offCanvasSide.setAttribute('style', '');
+				classList.remove('mui-slide-in');
+				classList.remove('mui-scalable');
+				switch ('main-move-scalable') {
+					case 'main-move':
+						if (moveTogether) {
+							//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+							offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+						}
+						break;
+					case 'main-move-scalable':
+						if (moveTogether) {
+							//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+							offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+						}
+						classList.add('mui-scalable');
+						break;
+					case 'menu-move':
+						classList.add('mui-slide-in');
+						break;
+					case 'all-move':
+						moveTogether = true;
+						//整体滑动时，侧滑菜单在inner-wrap内
+						offCanvasInner.insertBefore(offCanvasSide, offCanvasInner.firstElementChild);
+						break;
+				}
+				offCanvasWrapper.offCanvas().refresh();
+			}
+		//});
+		
+		 //主界面和侧滑菜单界面均支持区域滚动；
+		mui('#offCanvasSideScroll').scroll();
+		mui('#offCanvasContentScroll').scroll();
+		 //实现ios平台原生侧滑关闭页面；
+		if (mui.os.plus && mui.os.ios) {
+			mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+				plus.webview.currentWebview().setStyle({
+					'popGesture': 'none'
+				});
+			});
+		}
+		
+		document.getElementById("tel").addEventListener('tap', function() {
+			plus.device.dial("15812305120");
+		});
+		
+		mui.init({
+		  pullRefresh : {
+		    container:"#offCanvasContentScroll",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+		    down : {
+		      contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+		      contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+		      contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+		      callback :pullfresh //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+		    }
+		  }
+		});
+		
+		function pullfresh() {
+			setTimeout(function(){
+				mui('#offCanvasContentScroll').pullRefresh().endPulldownToRefresh();
+				mui.toast('刷新成功');
+			},1000)
+		}
+
+	</script>
+</body>
+</html>

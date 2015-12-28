@@ -1,0 +1,8 @@
+.yzl-slider-indicator .mui-indicator{
+    box-shadow: none;
+    background: #FFF;
+    margin: 1px 2px;
+}
+.yzl-slider-indicator .mui-active.mui-indicator{
+	background: #ff8a00;
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>说走就走</title>
+   	<script src="js/jquery.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/app.css" rel="stylesheet"/>
+</head>
+<body>
+	<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+		<!--侧滑菜单部分-->
+		<aside id="offCanvasSide" class="mui-off-canvas-left">
+			<div id="offCanvasSideScroll" class="mui-scroll-wrapper" style="color: #FFF;">
+				<div class="mui-scroll">
+					<div class="menu-left-login">
+						<a>注册</a>
+						<a>登录</a>
+					</div>
+					<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								首页
+								<span class="left-desc">Home</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								 特价啦
+								<span class="left-desc">Spacial offer</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								 省内游
+								<span class="left-desc">The province</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								 国内游
+								<span class="left-desc">Domestic</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								  国际游
+								<span class="left-desc">International</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								 机票
+								<span class="left-desc">Flight ticket</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								  酒店
+								<span class="left-desc">Hotel</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right mui-ellipsis">
+								<span class="mui-icon mui-icon-home"></span>
+								  签证
+								<span class="left-desc">Passport</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</aside>
+	
+		<div class="mui-inner-wrap" style="background: #FFF; overflow: hidden;">
+		<div class="mui-content mui-row mui-fullscreen">
+			<div class="list-left mui-col-xs-3" id="offCanvasContentScroll1">
+				<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+					<a class="mui-control-item mui-active" href="#content1">热门</a>
+					<a class="mui-control-item" href="#content2">周边旅行</a>
+					<a class="mui-control-item" href="#content3">国内旅行</a>
+					<a class="mui-control-item" href="#content4">马尔代夫</a>
+					<a class="mui-control-item" href="#content5">欧洲</a>
+					<a class="mui-control-item" href="#content6">美洲</a>
+					<a class="mui-control-item" href="#content7">日韩</a>
+					<a class="mui-control-item" href="#content8">东南亚</a>
+					<a class="mui-control-item" href="#content9">港澳台</a>
+				</div>
+			</div>
+			<div id="segmentedControlContents" class="mui-col-xs-9">
+				<div>
+					<div id="content1" class="mui-control-content mui-active">
+						<ul>
+							<li>
+								<h5>马尔代夫</h5>
+								<img src="images/b1.jpg" />
+							</li>
+							<li>
+								<h5>中东非洲</h5>
+								<img src="images/b2.jpg" />
+							</li>
+							<li>
+								<h5>泰国</h5>
+								<img src="images/b3.jpg" />
+							</li>
+							<li>
+								<h5>欧洲</h5>
+								<img src="images/b4.jpg" />
+							</li>
+							<li>
+								<h5>日本</h5>
+								<img src="images/b5.jpg" />
+							</li>
+							<li>
+								<h5>韩国</h5>
+								<img src="images/b6.jpg" />
+							</li>
+							<li>
+								<h5>美国</h5>
+								<img src="images/b7.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div id="content2" class="mui-control-content">
+						<ul>
+							<li>
+								<h5>香港</h5>
+								<img src="images/b8.jpg" />
+							</li>
+							<li>
+								<h5>澳门</h5>
+								<img src="images/b9.jpg" />
+							</li>
+							<li>
+								<h5>泰国</h5>
+								<img src="images/b3.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div id="content3" class="mui-control-content">
+						<ul>
+							<li>
+								<h5>香港</h5>
+								<img src="images/b8.jpg" />
+							</li>
+							<li>
+								<h5>澳门</h5>
+								<img src="images/b9.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div id="content4" class="mui-control-content">
+						<ul>
+							<li>
+								<h5>马尔代夫</h5>
+								<img src="images/b1.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div id="content5" class="mui-control-content">
+						<ul>
+							<li>
+								<h5>欧洲</h5>
+								<img src="images/b4.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div id="content6" class="mui-control-content">
+						<ul>
+							<li>
+								<h5>美国</h5>
+								<img src="images/b7.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div id="content7" class="mui-control-content">
+						<ul>
+							<li>
+								<h5>日本</h5>
+								<img src="images/b5.jpg" />
+							</li>
+							<li>
+								<h5>韩国</h5>
+								<img src="images/b6.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div id="content8" class="mui-control-content">
+						<ul>
+							<li>
+								<h5>中东非洲</h5>
+								<img src="images/b2.jpg" />
+							</li>
+							<li>
+								<h5>泰国</h5>
+								<img src="images/b3.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div id="content9" class="mui-control-content">
+						<ul>
+							<li>
+								<h5>香港</h5>
+								<img src="images/b8.jpg" />
+							</li>
+							<li>
+								<h5>澳门</h5>
+								<img src="images/b9.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--底部导航开始-->
+		<nav class="mui-bar mui-bar-tab">
+			<a id="index" class="mui-tab-item">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a id="list" class="mui-tab-item mui-active">
+				<span class="mui-icon mui-icon-navigate"></span>
+				<span class="mui-tab-label">目的地</span>
+			</a>
+			<a id="category" class="mui-tab-item">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">分类</span>
+			</a>
+			<a id="user" class="mui-tab-item">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<!--底部导航结束-->
+		<!-- off-canvas backdrop -->
+		<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		
+	</div>
+	
+	<script>
+		mui.init();
+		
+		var index = document.getElementById('index').addEventListener('tap', function() {
+//			mui.openWindow({
+//			    url: 'index.html', 
+//			    id: 'index',
+//			    show:{
+//			      autoShow:false
+//			    }
+//		  	});
+		  	window.location.href = "index.html";
+		});
+//		mui.init({
+//		  preloadPages:[
+//		    {
+//		      url:'index.html',
+//		      id:'index'
+//		    }
+//		  ]
+//		});
+		var category = document.getElementById('category').addEventListener('tap', function() {
+//			mui.openWindow({
+//			    url: 'category.html', 
+//			    id: 'category',
+//			    show:{
+//			      autoShow:false
+//			    }
+//		  	});
+		  	window.location.href = "category.html";
+		});
+//		mui.init({
+//		  preloadPages:[
+//		    {
+//		      url:'category.html',
+//		      id:'category'
+//		    }
+//		  ]
+//		});
+		var user = document.getElementById('user').addEventListener('tap', function() {
+//			mui.openWindow({
+//			    url: 'user.html', 
+//			    id: 'user',
+//			    show:{
+//			      autoShow:false
+//			    }
+//		  	});
+		  	window.location.href = "user.html";
+		});
+//		mui.init({
+//		  preloadPages:[
+//		    {
+//		      url:'user.html',
+//		      id:'user'
+//		    }
+//		  ]
+//		});
+		//var controls = document.getElementById("segmentedControls");
+		//var contents = document.getElementById("segmentedControlContents");
+		//controls.querySelector('.mui-control-item').classList.add('mui-active');
+		//contents.querySelector('.mui-control-content').classList.add('mui-active');
+		
+		 //侧滑容器父节点
+		var offCanvasWrapper = mui('#offCanvasWrapper');
+		 //主界面容器
+		var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+		 //菜单容器
+		var offCanvasSide = document.getElementById("offCanvasSide");
+		if (!mui.os.android) {
+			//document.getElementById("move-togger").classList.remove('mui-hidden');
+			var spans = document.querySelectorAll('.android-only');
+			for (var i = 0, len = spans.length; i < len; i++) {
+				spans[i].style.display = "none";
+			}
+		}
+		 //移动效果是否为整体移动
+		var moveTogether = false;
+		 //侧滑容器的class列表，增加.mui-slide-in即可实现菜单移动、主界面不动的效果；
+		var classList = offCanvasWrapper[0].classList;
+		 //变换侧滑动画移动效果；
+		//mui('.mui-input-group').on('change', 'input', function() {
+			if ('all-move') {
+				offCanvasSide.classList.remove('mui-transitioning');
+				offCanvasSide.setAttribute('style', '');
+				classList.remove('mui-slide-in');
+				classList.remove('mui-scalable');
+				switch ('main-move-scalable') {
+					case 'main-move':
+						if (moveTogether) {
+							//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+							offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+						}
+						break;
+					case 'main-move-scalable':
+						if (moveTogether) {
+							//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+							offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+						}
+						classList.add('mui-scalable');
+						break;
+					case 'menu-move':
+						classList.add('mui-slide-in');
+						break;
+					case 'all-move':
+						moveTogether = true;
+						//整体滑动时，侧滑菜单在inner-wrap内
+						offCanvasInner.insertBefore(offCanvasSide, offCanvasInner.firstElementChild);
+						break;
+				}
+				offCanvasWrapper.offCanvas().refresh();
+			}
+		//});
+		
+		 //主界面和侧滑菜单界面均支持区域滚动；
+		mui('#offCanvasSideScroll').scroll();
+		mui('#offCanvasContentScroll1').scroll();
+		mui("#segmentedControlContents").scroll();
+		 //实现ios平台原生侧滑关闭页面；
+		if (mui.os.plus && mui.os.ios) {
+			mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+				plus.webview.currentWebview().setStyle({
+					'popGesture': 'none'
+				});
+			});
+		}
+		
+		//处理逻辑：1秒内，连续两次按返回键，则退出应用；
+		var showMenu = false;
+		var first = null;
+		mui.back = function() {
+			if (showMenu) {
+				closeMenu();
+			} else {
+				//首次按键，提示‘再按一次退出应用’
+				if (!first) {
+					first = new Date().getTime();
+					mui.toast('再按一次退出应用');
+					setTimeout(function() {
+						first = null;
+					}, 1000);
+				} else {
+					if (new Date().getTime() - first < 1000) {
+						plus.runtime.quit();
+					}
+				}
+			}
+		};
+		function closeMenu() {
+			mui('.mui-off-canvas-wrap').offCanvas('close');
+		};
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+/*
+ *这是个性化css，可以覆盖标准mui的css定义；
+ * */
+/* 清理浮动 */
+.clearfix:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.clearfix {
+    zoom:1; /* for IE6 IE7 */
+}
+/* 设置内联, 减少浮动带来的bug */
+.fn-left,
+.fn-right {
+    display:inline;
+}
+.fn-left {
+    float:left;
+}
+.fn-right {
+    float:right;
+}
+/* 单行文字溢出时出现省略号，需设定宽度 */ 
+.fn-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*------------------------------------------*/
+body{
+	background: #f0f0f0;
+}
+.mui-slider-indicator .mui-indicator{
+    box-shadow: none;
+    background: #FFF;
+    margin: 1px 2px;
+}
+.mui-slider-indicator .mui-active.mui-indicator{
+	background: #ff8a00;
+}
+.mui-bar{
+	box-shadow: none;
+	border-top: 1px solid #efeff4;
+	background: #FFF;
+	z-index: 9998;
+}
+.mui-row.mui-fullscreen>[class*="mui-col-"] {
+	height: 100%;
+}
+.mui-col-xs-3,
+.mui-control-content {
+	overflow-y: auto;
+	height: 100%;
+}
+.mui-segmented-control .mui-control-item {
+	line-height: 50px;
+	width: 100%;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+	background-color: #fff;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	background: #33BD61 !important;
+	color: #FFF !important;
+}
+.mui-bar-tab .mui-tab-item.mui-active{
+	color: #32BD60;
+}
+/*------------------------------------------*/
+
+.btn-nav{
+	background: #FFF;
+}
+.btn-nav ul{
+	margin: 0;
+	padding: 5px 0 0px;
+}
+.btn-nav li{
+	float: left;
+	width: 20%;
+	list-style: none;
+	text-align: center;
+	margin: 5px 0;
+	font-size: 12px;
+}
+.btn-nav li a{
+	display: block;
+}
+.btn-nav .btn-icon{
+	background-image:url(../images/45fc0bff715eeb3312ef821afe15cb5f_w960_h960_c0_t0.png);
+	display: block;
+	width: 45px;
+	height: 45px;
+	margin: 0 auto;
+	background-size: 45px;
+}
+.btn-nav span.word {
+    display: block;
+    color: #333;
+    text-align: center;
+    margin-top: 1px;
+}
+.btn-nav li:nth-of-type(1) .btn-icon{
+	background-position: 0 -0px; 
+}
+.btn-nav li:nth-of-type(2) .btn-icon{
+	background-position: 0 -45px; 
+}
+.btn-nav li:nth-of-type(3) .btn-icon{
+	background-position: 0 -90px; 
+}
+.btn-nav li:nth-of-type(4) .btn-icon{
+	background-position: 0 -135px; 
+}
+.btn-nav li:nth-of-type(5) .btn-icon{
+	background-position: 0 -180px; 
+}
+.btn-nav li:nth-of-type(6) .btn-icon{
+	background-position: 0 -225px; 
+}
+.btn-nav li:nth-of-type(7) .btn-icon{
+	background-position: 0 -270px; 
+}
+.btn-nav li:nth-of-type(8) .btn-icon{
+	background-position: 0 -315px; 
+}
+.btn-nav li:nth-of-type(9) .btn-icon{
+	background-position: 0 -360px; 
+}
+.btn-nav li:nth-of-type(10) .btn-icon{
+	background-position: 0 -405px; 
+}
+.active-list{
+	margin-top: 10px;
+}
+.active-list ul{
+	margin: 0;
+	padding: 0;
+}
+.active-list li{
+	list-style: none;
+	float: left;
+	width: 33.3333333%;
+	border-right: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
+}
+.active-list li:nth-of-type(3n+3){
+	border-right: 1px solid #FFF;
+}
+.active-list li:nth-of-type(n+4){
+	border-bottom: 1px solid #FFF;
+}
+.active-list li img{
+	width: 100%;
+	display: block;
+}
+.bottom-height{
+	height: 50px;
+}
+.groom,.sale,.yzl{
+	background: #FFF;
+	margin-top: 10px;
+}
+.item-title{
+	color: rgb(51, 51, 51);
+	font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 15px;
+    line-height: 20px;
+}
+.groom ul{
+	margin: 0;
+	padding: 0;
+}
+.groom li{
+	list-style: none;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+.groom li:first-child{
+	padding: 0 15px 10px;
+}
+.groom li:last-child{
+	border-bottom: none;
+}
+.groom li img{
+	width: 64px;
+	height: 64px;
+	border-radius: 6px;
+}
+.groom li div{
+	display: table-cell;
+	vertical-align: top;
+}
+.groom li div:nth-of-type(1){
+	padding-right: 10px;
+}
+.groom li div:nth-of-type(2) span{
+	text-align: justify;
+	color: rgb(85, 85, 85);
+	padding-right: 10px;
+}
+.groom li div p{
+	margin: 0;
+	padding: 0;
+	white-space:nowrap;
+	rgb(153, 153, 153);
+	text-align: right;
+}
+.red{
+	color: rgb(255, 119, 103) !important;
+	font-family: "microsoft yahei";
+}
+.yzl{
+	padding: 10px 15px;
+	font-size: 14px;
+	color: rgb(85, 85, 85);
+}
+.sale ul{
+	margin: 0;
+	padding: 0;
+}
+.sale li{
+	float: left;
+	list-style: none;
+	width: 33.33333%;
+	padding: 8px;
+	position:relative;
+}
+.sale li img{
+	width: 100%;
+	border-radius: 6px;
+}
+.sale .item-title{
+	padding: 10px 15px 0;
+}
+.sale li h4,.sale li h5{
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	color: #FFF;
+}
+.sale li h4{
+	font-size: 18px;
+	bottom: 50px;
+}
+.sale li h5{
+	font-size: 14px;
+}
+.sale li h5:nth-of-type(1){
+	bottom: 30px;
+}
+.top-wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	background-color: rgba(240,240,240,0);
+	z-index: 100;
+	font-size: 14px;
+	color: #FFF;
+	/*transition: .3s;*/
+}
+.top-wrap .city,.top-wrap .tel{
+	height: 48px;
+	line-height: 48px;
+	width: 15%;
+	width: calc(50px);
+	text-align: center;
+}
+.top-wrap .city{
+	width: 20%;
+	width: calc(70px);
+	overflow: hidden;
+	color: #32BD60;
+}
+.top-wrap .search{
+	width: 65%;
+	width: calc(100% - 120px);
+	height: 48px;
+}
+.top-wrap .mui-icon-location{
+	font-size: 20px;
+	vertical-align: middle;
+}
+.top-wrap .mui-icon{
+	vertical-align: middle;
+}
+.top-wrap .search input{
+	background-color: #FFF;
+	border: 1px solid #efeff4;
+	border-radius: 3px;
+	width: 100%;
+	height: 32px;
+	margin-top: 8px;
+	padding: 0 7px;
+	font-size: 14px;
+}
+.list-left{
+	background: #FFF;
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+.list-left a{
+	padding: 10px 0;
+}
+.mui-control-content{
+	padding: 10px 15px 52px;
+}
+.mui-control-content ul{
+	margin: 0;
+	padding: 0;
+}
+.mui-control-content li{
+	list-style: none;
+	margin-bottom: 10px;
+	position: relative;
+	height: 100px;
+}
+.mui-control-content img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.mui-control-content h5{
+	display: block;
+    width: 100%;
+    line-height: 30px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, 0.8);
+    font-size: 14px;
+    text-align: center;
+    color: #317eac;
+}
+.mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item, .mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item.mui-active{
+	color: rgb(85, 85, 85);
+}
+.mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item, .mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item.mui-active{
+	border-bottom: 1px solid #F0F0F0;
+}
+.mui-table-view-cell:after{
+	background-color: #EEE;
+}
+.mui-off-canvas-wrap.mui-active .mui-off-canvas-backdrop{
+	z-index: 9999;
+}
+#offCanvasContentScroll{
+	overflow: hidden;
+}
+#offCanvasSideScroll{
+	font-size: 12px;
+}
+#offCanvasSideScroll a{
+	color: #CCCCCC;
+}
+.menu-left-login{
+	text-align: center;
+	padding: 30px 0;
+}
+.menu-left-login a{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 50px;
+	text-align: center;
+	margin: 0 5px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+}
+body{
+	scrollbar-face-color:rgba(255,255,255,0); 
+	scrollbar-highlight-color:rgba(255,255,255,0); 
+	scrollbar-3dlight-color:rgba(255,255,255,0); 
+	scrollbar-darkshadow-color:rgba(255,255,255,0); 
+	scrollbar-Shadow-color:rgba(255,255,255,0); 
+	scrollbar-arrow-color:rgba(255,255,255,0); 
+	scrollbar-track-color:rgba(255,255,255,0); 
+}
+.mui-scrollbar-vertical{
+	right: 0;
+	opacity: 0 !important;
+}
+.mui-scrollbar-vertical .mui-scrollbar-indicator{
+	background: #eee;
+}
+.mui-table-view-cell:last-child:after, .mui-table-view-cell:last-child:before{
+	height: 1px;
+}
+.mui-table-view:before{
+	height: 0px;
+}
+.mui-table-view:after{
+	height: 0px;
+}
+#offCanvasContentScroll{
+	position: relative;
+}
+.mui-pull{
+	bottom: 13px;
+}
